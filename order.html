@@ -423,6 +423,9 @@
       .line-item-line-price p {
         text-align: right !important;
       }
+      .products-grid img:hover {
+        opacity: 0.8;
+      }
 
       /* SECTION: Payment Info */
       .payment_info h3 {
@@ -641,6 +644,9 @@
         text-transform: uppercase;
         color: #212121;
       }
+      th.menu_bar_item:hover, th.menu_bar_item a:hover {
+        color: #ffa000;
+      }
       th.menu_bar_item {
         border-right: 1px solid #d3d3d3;
         border-left: 1px solid #d3d3d3;
@@ -668,6 +674,9 @@
         padding: 6px 6px 26px 6px;
         vertical-align: middle;
         filter: brightness(0%) !important;
+      }
+      .social-icons:hover {
+        filter: invert(59%) sepia(66%) saturate(1230%) hue-rotate(360deg) brightness(102%) contrast(105%) !important;
       }
       .column_unsubscribe {
         padding-top: 20px;
@@ -761,6 +770,9 @@
         }
         div > u ~ div {
           width: 100% !important;
+        }
+        .table-mobile {
+          padding: 0 20px;
         }
         /* general functionality */
         .block {
@@ -986,6 +998,17 @@
           cursor: default;
         }
       }
+      @media screen and (max-width: 400px) {
+        .img-mobile {
+          display: none !important;
+        }
+        .mobile-padding-img {
+          padding-left: 20px;
+        }
+        .width100p {
+          width: 156px !important;
+        }
+      }
     </style>
     <!-- /GENERAL MEDIA QUERY -->
 
@@ -1197,7 +1220,7 @@
                               <td
                                 align="center"
                                 style="
-                                  padding-top: 75px;
+                                  padding-top: 60px;
                                   font-size: 35px;
                                   line-height: 39px;
                                   color: #141414;
@@ -1222,26 +1245,11 @@
                                 "
                               >
                                 <!-- ORDER -->
-                                <strong>Order number: D05-650056-006500</strong>
+                                <strong>Order number:</strong> D05-650056-006500
                               </td>
                             </tr>
                             <tr>
                               <td align="center" style="padding-top: 25px">
-                                <!-- border cta -->
-
-                                <!--[if gte mso 9]>
-                                  <style type="text/css">
-                                    .primary_cta {
-                                      background-color: #ffa000 !important;
-                                      border: 1px solid #ffa000 !important;
-                                      padding: 13px 50px !important;
-                                      border-collapse: collapse !important;
-                                    }
-                                    .resetBorder {
-                                      border: none !important;
-                                    }
-                                  </style>
-                                <![endif]-->
                                 <table
                                   cellpadding="0"
                                   cellspacing="0"
@@ -1317,7 +1325,7 @@
                   style="padding-top: 0px; padding-bottom: 30px"
                 >
                   <!-- DESKTOP ITEM DESCRIPTION AND PRICE HEADER -->
-                  <table class="table-inner" cellspacing="0" cellpadding="0" border="0" width="100%" style="min-width:100%" role="presentation">
+                  <table class="table-inner table-mobile" cellspacing="0" cellpadding="0" border="0" width="100%" style="min-width:100%" role="presentation">
                     <tr>
                       <th class="product-table">
                         <table cellspacing="0" cellpadding="0" border="0" width="100%" style="min-width:100%" role="presentation">
@@ -1466,12 +1474,9 @@
                               </tr>
                             
                           
-                          <tr>
-                            <th class="table-title" data-key="3155139_total_minus_tax">Total excl. tax</th>
-                            <th class="table-text">$350.00</th>
-                          </tr>
+
                           <tr class="pricing-table-total-row">
-                            <th class="table-title table-title-final" data-key="3155139_total">Total</th>
+                            <th class="table-title table-title-final" data-key="3155139_total">Grand Total</th>
                             <th class="table-text table-title-final">$384.00</th>
                           </tr>
                           
@@ -1539,7 +1544,7 @@
                     role="presentation"
                     bgcolor="#FFFFFF"
                     style="text-align: center; width: 100%; max-width: 600px"
-                    class="width92p centertable"
+                    class="width92p centertable products-grid"
                   >
                     <tbody>
                       <tr>
@@ -1647,7 +1652,7 @@
                                     border="0"
                                     role="presentation"
                                     style="width: 166px"
-                                    class="width100p centertable"
+                                    class="width100p centertable mobile-padding-img"
                                   >
                                     <tr>
                                       <td
@@ -1727,7 +1732,7 @@
                                     border="0"
                                     role="presentation"
                                     style="width: 166px"
-                                    class="width100p centertable"
+                                    class="width100p centertable img-mobile"
                                   >
                                     <tr>
                                       <td
@@ -1748,7 +1753,7 @@
                                             alt="The Silmarillion"
                                             class="width100p"
                                         /></a>
-                                        <p>RAVEN LIGHT GREY/NUDE NUBUCK</p>
+                                        <p>RAVEN LIGHT GREY/NUDE NUBUCK SPORT FEMALE FIT</p>
                                         <p>$120.00</p>
                                       </td>
                                     </tr>
